@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* social media icons */
+.fb-icon:hover {
+  color: #43609c;
+  cursor: pointer;
+}
+
+.tw-icon:hover {
+  color: #55acee;
+  cursor: pointer;
+}
+
+.ig-icon:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  cursor: pointer;
+  border-radius: 80%;
+}
+
+/* semantic tags */
+header {
+  background: linear-gradient(to right, #000, #333);
+}
+
+button {
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+#hero h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 5%;
+  color: white;
+  padding-top: 1vh;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5%;
+  width: 100%;
+}
+
+nav a {
+  margin: 0 3.5%;
+  color: white;
+  font-weight: bold;
+}
+
+/* styling */
+#hero {
+  width: 100%;
+  height: 30vh;
+  text-align: center;
+  background: linear-gradient(to right, #000, #333);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.hero-content {
+  width: 95%;
+  margin: auto;
+}
+
+.hero-content i {
+  margin: 0 2%;
+}
+
+/* about */
+#about {
+  width: 95%;
+  padding: 3%;
+  margin: auto;
+  text-align: center;
+}
+
+#about a {
+  color: darkblue;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.s-span {
+  padding: 2%;
+  width: 95%;
+  margin: auto;
+  z-index: 100;
+}
+
+/* client */
+.client {
+  background: linear-gradient(to right, #222, #333);
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+  margin-bottom: 4vh;
+}
+
+.client img {
+  height: 12.5vh;
+  border-radius: 70%;
+  margin-right: 2.5rem;
+}
+
+.client-reverse {
+  background: linear-gradient(to left, #222, #333);
+  flex-direction: row-reverse;
+}
+
+.client-reverse img {
+  transform: scaleX(-1);
+}
+
+/* trainers */
+#merchandise {
+  text-align: center;
+}
+
+#merchandise button {
+  padding: 1%;
+  font-weight: bold;
+  margin: 0 1%;
+  cursor: pointer;
+}
+.trainers {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 98%;
+}
+
+.trainer {
+  width: 30%;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.trainer img {
+  width: 100%;
+}
+
+/* contact */
+#contact {
+  background: linear-gradient(#000, #333);
+  color: white;
+  padding: 1%;
+  text-align: center;
+}
+
+.contact-sec {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#contact .form {
+  width: 50%;
+  margin: 0 0 0 2%;
+  padding: 1%;
+}
+
+#contact .form input {
+  font-weight: 300;
+  width: 100%;
+  margin: 2vh 0;
+  padding: 1.5%;
+  border-radius: 8px;
+}
+
+#contact .form input:last-child {
+  width: 25%;
+  margin: 0 25%;
+}
+
+#contact .form input:last-child:hover {
+  cursor: pointer;
+}
+
+#contact .image {
+  width: 100%;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin-top: 4vh;
+  color: white;
+  background: black;
+  padding: 1.5%;
+}
+
+/* media queries */
+@media screen and (max-width: 1024px) {
+  .trainer {
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .trainer {
+    width: 87%;
+  }
+}
