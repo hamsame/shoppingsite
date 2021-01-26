@@ -4,11 +4,13 @@
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  box-sizing: border-box;
+  box-shadow: none;
 }
 
 /* social media icons */
 .fb-icon:hover {
-  color: #43609c;
+  color: #3b5998;
   cursor: pointer;
 }
 
@@ -31,13 +33,13 @@
 }
 
 /* semantic tags */
-header {
-  background: linear-gradient(to right, #000, #333);
+button {
+  border: none;
+  background: none;
 }
 
-button {
-  background-color: transparent;
-  border-radius: 8px;
+button:active {
+  border: none;
 }
 
 #hero h1 {
@@ -55,28 +57,37 @@ header h1 {
 }
 
 nav {
+  position: relative;
+  top: 5%;
   display: flex;
   justify-content: flex-end;
-  padding: 0.5%;
+  padding: 2%;
+  z-index: 2;
   width: 100%;
+  font-weight: bolder;
 }
 
 nav a {
   margin: 0 3.5%;
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 /* styling */
 #hero {
   width: 100%;
-  height: 30vh;
+  height: 100vh;
   text-align: center;
-  background: linear-gradient(to right, #000, #333);
+  background: linear-gradient(
+    to bottom right,
+    rgb(0, 68, 142),
+    rgb(60, 184, 233)
+  );
   color: white;
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  justify-content: center;
 }
 
 .hero-content {
@@ -90,14 +101,28 @@ nav a {
 
 /* about */
 #about {
-  width: 95%;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    crimson,
+    red,
+    orangered,
+    darkorange,
+    orange
+  );
+  color: white;
   padding: 3%;
   margin: auto;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 #about a {
-  color: darkblue;
+  color: black;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -109,34 +134,10 @@ nav a {
   z-index: 100;
 }
 
-/* client */
-.client {
-  background: linear-gradient(to right, #222, #333);
-  display: flex;
-  flex-direction: row;
-  color: white;
-  justify-content: space-between;
-  margin-bottom: 4vh;
-}
-
-.client img {
-  height: 12.5vh;
-  border-radius: 70%;
-  margin-right: 2.5rem;
-}
-
-.client-reverse {
-  background: linear-gradient(to left, #222, #333);
-  flex-direction: row-reverse;
-}
-
-.client-reverse img {
-  transform: scaleX(-1);
-}
-
 /* trainers */
 #merchandise {
   text-align: center;
+  background: linear-gradient(to right, #ddd, white);
 }
 
 #merchandise button {
@@ -165,7 +166,12 @@ nav a {
 
 /* contact */
 #contact {
-  background: linear-gradient(#000, #333);
+  /* background: linear-gradient(#000, #333); */
+  background: linear-gradient(
+    to bottom right,
+    rgb(0, 68, 142),
+    rgb(60, 184, 233)
+  );
   color: white;
   padding: 1%;
   text-align: center;
@@ -207,7 +213,6 @@ nav a {
 /* footer */
 footer {
   text-align: center;
-  margin-top: 4vh;
   color: white;
   background: black;
   padding: 1.5%;

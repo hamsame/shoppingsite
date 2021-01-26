@@ -4,43 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HME Custom Trainers | Trainers</title>
+    <link rel="stylesheet" href="style.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-      crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>HME Custom Trainers</h1>
+    <section id="hero">
       <nav>
         <a href="index.html">Home</a>
         <a href="#about">About</a>
         <a href="#merchandise">Trainers</a>
         <a href="#contact">Contact Us</a>
       </nav>
-    </header>
-
-    <section id="hero">
       <div class="hero-content">
         <h1>HME Custom Trainers</h1>
         <br />
         <p>We make custom trainers for you</p>
         <span>
-          <br />
-          <i class="fab fa-facebook fa-2x fb-icon"></i>
-          <i class="fab fa-twitter fa-2x tw-icon"></i>
-          <i class="fab fa-instagram fa-2x ig-icon"></i>
+          <br /><br /><br /><br /><br />
+          <i class="fab fa-facebook fa-3x fb-icon"></i>
+          <i class="fab fa-twitter fa-3x tw-icon"></i>
+          <i class="fab fa-instagram fa-3x ig-icon"></i>
         </span>
       </div>
     </section>
 
     <section id="about">
-      <h2>About Us</h2>
       <span class="s-span">
+        <h2>About Us</h2>
+        <br /><br />
         <p>
           Our Founders James Doe, John Doe and Janice Doe (not related) started
           personalising their old trainers together as a hobby after being bored
@@ -53,78 +48,20 @@
           <br /><br />
           Some of our designs have been featured in prominent publications such
           as <strong>Complex</strong> and <strong>Time Magazine.</strong> We
-          have also appeared on BBC News and CNN. <br /><br />
+          have also appeared on BCC News and CCN. <br /><br />
           Feel free to check out some of our work
-          <a href="#merchandise">here</a>
+          <a href="#merchandise">here.</a>
         </p>
       </span>
     </section>
 
-    <section id="clients">
-      <br /><br />
-      <h2>Our Clients</h2>
-      <br />
-      <span class="s-span client">
-        <img src="images/marcus-rashford.png" />
-        <span>
-          <h2>Marcus Rashford</h2>
-          <br />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            tempore eligendi reprehenderit mollitia ex. Quidem quam laboriosam
-            quo, esse, fugiat totam cumque molestiae ducimus ab ut non fugit,
-            repellendus perspiciatis.
-          </p>
-        </span>
-      </span>
-      <br /><br /><br />
-      <span class="s-span client client-reverse">
-        <img src="images/beckham.jpeg" />
-        <span>
-          <h2>David Beckham</h2>
-          <br />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            tempore eligendi reprehenderit mollitia ex. Quidem quam laboriosam
-            quo, esse, fugiat totam cumque molestiae ducimus ab ut non fugit,
-            repellendus perspiciatis.
-          </p>
-        </span> </span
-      ><br /><br /><br />
-      <span class="s-span client">
-        <img src="images/marcus-rashford.png" />
-        <span>
-          <h2>Marcus Rashford</h2>
-          <br />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            tempore eligendi reprehenderit mollitia ex. Quidem quam laboriosam
-            quo, esse, fugiat totam cumque molestiae ducimus ab ut non fugit,
-            repellendus perspiciatis.
-          </p>
-        </span>
-      </span>
-      <br /><br /><br />
-      <span class="s-span client client-reverse">
-        <img src="images/beckham.jpeg" />
-        <span>
-          <h2>David Beckham</h2>
-          <br />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            tempore eligendi reprehenderit mollitia ex. Quidem quam laboriosam
-            quo, esse, fugiat totam cumque molestiae ducimus ab ut non fugit,
-            repellendus perspiciatis.
-          </p>
-        </span>
-      </span>
-    </section>
-
     <section id="merchandise">
+      <br /><br />
       <h2>Custom Trainers</h2>
+      <br /><br />
       <p>
         Check out Nike Air-Max 90, Nike Air Force 1 and Adidas flux trainers
-        customised. Click the links below to filter the trainers
+        customised. Click the buttons below to filter the trainers
       </p>
       <br />
       <button id="all">All</button>
@@ -242,9 +179,10 @@
       </p>
       <div class="contact-sec">
         <div class="form">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
-          <input type="number" placeholder="Phone Number" />
+          <input type="text" placeholder="First Name" id="fname" />
+          <input type="text" placeholder="Surname" id="lname" />
+          <input type="text" placeholder="Email Address" id="email" />
+          <input type="text" placeholder="Phone Number" id="phone" />
           <input type="text" placeholder="Message" />
           <input type="submit" value="Submit" />
         </div>
